@@ -1,17 +1,19 @@
 """Lists of words with varying lengths and difficulties."""
 
 easy_words = [
-    "toy"
+    "lemon",
+    "peach",
+    "kiwi"
 ]
 
 medium_words = [
-    "lemon",
-    "cheese",
-    "happy"
+    "orange",
+    "banana",
+    "cherry"
 ]
 
 hard_words = [
-    "congratulations",
-    "absolutely",
-    "university",
+    "watermelon",
+    "mangosteen",
+    "strawberry",
 ]
