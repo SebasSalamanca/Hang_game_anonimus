@@ -1,8 +1,7 @@
 """Lists of words with varying lengths and difficulties."""
 
 easy_words = [
-    "toy",
-    "doll"
+    "toy"
 ]
 
 medium_words = [

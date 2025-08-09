@@ -2,11 +2,14 @@ import typer
 
 """Let's make a hangman game."""
 
-print("Type the words and hit enter within the time limit!")
+print("Type the letter to guess the word and press enter within the time limit!")
 lives = 6 
-words_level, vector = typer.pick_random_words("easy")
+user_level = typer.choose_user_level()
+words_level, vector = typer.pick_random_words(user_level)
 while lives > 0:
-    user_letter = typer.get_user_input(20)
+    typer.show_user_screen(vector, lives)
+    user_letter = typer.get_user_input(5)
     vector,flag = typer.compare_position_word(user_letter, words_level, vector)
-    lives = typer.decrease_lives(lives,flag)
+    lives = typer.decrease_lives(lives,flag, words_level)
+    
 print("Thanks for playing.")
